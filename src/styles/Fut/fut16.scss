@@ -1,0 +1,111 @@
+@import "card-functions.scss";
+@import "../../assets/fonts/fifa-chemistry/variables.scss";
+@import "fifa-fonts.scss";
+@import "../CardStyles/card-styles-16.scss";
+
+.fut16 {
+  $card_dir_base: "../assets/cards/fifa16/";
+  &.playercard {
+    &.card-xl {
+      $cardWidth: 540;
+      $cardHeight: 845;
+      $card_dir: "#{$card_dir_base}large-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-16($cardHeight, $cardWidth, $card_dir);
+    }
+    &.card-large {
+      $cardWidth: 202;
+      $cardHeight: 316;
+      $card_dir: "#{$card_dir_base}large-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-16($cardHeight, $cardWidth, $card_dir);
+    }
+    &.card-small {
+      $cardWidth: 135;
+      $cardHeight: 211;
+      $card_dir: "#{$card_dir_base}large-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-16($cardHeight, $cardWidth, $card_dir);
+      .playercard-mid-bar > div > .midbar-label {
+        display: none;
+      }
+    }
+    &.card-mini {
+      $cardWidth: 80;
+      $cardHeight: 102;
+      $card_dir: "#{$card_dir_base}mini-";
+      $shinePath: "#{$card_dir_base}mini/hd-";
+      @include card-styles-16($cardHeight, $cardWidth, $card_dir);
+      background-size: 80px 102px;
+      .playercard-mid-bar,
+      .playercard-attr {
+        display: none;
+      }
+      .playercard-container {
+        height: 100%;
+        width: 100%;
+      }
+      .playercard-picture {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        border-bottom-left-radius: 100px 1px;
+        border-bottom-right-radius: 100px 5px;
+      }
+      .playercard-picture img {
+        height: 45px;
+      }
+      .playercard-club {
+        position: absolute;
+        top: 37px;
+        left: 0;
+        width: 50%;
+        text-align: center;
+      }
+      .playercard-club img {
+        height: 18px;
+      }
+      .playercard-nation {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 50%;
+        text-align: center;
+      }
+      .playercard-nation img {
+        height: 12px;
+      }
+      .playercard-name {
+        font-family: "Knul-Bold", "Opens-Sans", sans-serif;
+        font-size: 10px;
+        position: absolute;
+        top: 71px;
+        left: 2px;
+        width: 77px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+      }
+      .playercard-rating {
+        font-family: "Knul-Bold", "Opens-Sans", sans-serif;
+        font-size: 15px;
+        position: absolute;
+        top: 9px;
+        left: 12px;
+        text-align: center;
+      }
+      .playercard-position {
+        font-family: "Knul-Bold", "Opens-Sans", sans-serif;
+        font-size: 10px;
+        position: absolute;
+        top: 22px;
+        left: 0px;
+        width: 41px;
+        text-align: center;
+      }
+    }
+  }
+}

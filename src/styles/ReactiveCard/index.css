@@ -1,0 +1,78 @@
+@import url('src/styles/ReactiveCard/cards.css');
+@import url('./cards/amazing-rare.css');
+@import url('./cards/base.css');
+@import url('./cards/basic.css');
+@import url('./cards/cosmos-holo.css');
+@import url('./cards/radiant-holo.css');
+@import url('./cards/rainbow-alt.css');
+@import url('./cards/rainbow-holo.css');
+@import url('./cards/rediant-holo.css');
+@import url('./cards/regular-holo.css');
+@import url('./cards/reverse-holo.css');
+@import url('./cards/secret-rare.css');
+@import url('./cards/shiny-pikachu.css');
+@import url('./cards/shiny-rare.css');
+@import url('./cards/shiny-v.css');
+@import url('./cards/shiny-vmax.css');
+@import url('./cards/swsh-pikachu.css');
+@import url('./cards/trainer-full-art.css');
+@import url('./cards/trainer-gallery-holo.css');
+@import url('./cards/trainer-gallery-secret-rare.css');
+@import url('./cards/trainer-gallery-v-max.css');
+@import url('./cards/trainer-gallery-v-regular.css');
+@import url('./cards/v-full-art.css');
+@import url('./cards/v-max.css');
+@import url('./cards/v-max.css');
+@import url('./cards/v-regular.css');
+@import url('./cards/v-star.css');
+
+@media screen and (min-width: 600px) {
+    header {
+        grid-template-columns: 50% 1fr;
+    }
+
+    .showcase {
+        grid-column: 2;
+        grid-row: 1/5;
+    }
+
+    .intro,
+    .info,
+    .author {
+        grid-column: 1;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        grid-template-columns: 60% 1fr;
+    }
+}
+
+.showcase {
+    z-index: 99;
+    max-width: min(330px, 80vw);
+    margin: auto;
+}
+
+mark {
+    background: #006065;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding-inline: 0.25em;
+    border-radius: 3px;
+}
+
+.back-to-top {
+    font-weight: bold;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: .5em 1em;
+    border-radius: 5em;
+    background: var(--primary);
+    color: hsl(192, 87%, 15%);
+    text-decoration: none;
+    box-shadow: 0 7px 13px -5px currentColor;
+}

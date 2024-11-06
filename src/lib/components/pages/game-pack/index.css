@@ -1,0 +1,99 @@
+:root {
+  --size: 110vh;
+  --s: calc(var(--size) / 6);
+  --bor: calc(var(--size) / 30);
+  --boxShadow: calc(var(--size) / 12);
+}
+
+.circle-canvas-effect-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size);
+  height: var(--size);
+  filter: url(#wavy) blur(1px);
+}
+
+.circle-canvas-effect-background:before,
+.circle-canvas-effect-background:after {
+  content: "";
+  position: absolute;
+  top: var(--s);
+  left: var(--s);
+  right: var(--s);
+  bottom: var(--s);
+  border-radius: 50%;
+  border: var(--bor) solid #fff;
+}
+
+.circle-canvas-effect-background:before {
+  box-shadow:
+    0 0 var(--boxShadow) #0f0,
+    inset 0 0 var(--boxShadow) #0f0;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0002);
+  animation: moveBackground 5s linear infinite;
+}
+
+.circle-canvas-effect-background:after {
+  box-shadow:
+    0 0 calc(var(--bor) / 2) #fff,
+    inset 0 0 var(--bor) #fff;
+}
+
+@keyframes moveBackground {
+  0% {
+    box-shadow:
+      0 0 var(--boxShadow) #0f0,
+      inset 0 0 var(--boxShadow) #0f0;
+    filter: hue-rotate(0deg);
+  }
+  20% {
+    box-shadow:
+      0 0 60px #0f0,
+      inset 0 0 60px #0f0;
+  }
+  40% {
+    box-shadow:
+      0 0 40px #0f0,
+      inset 0 0 40px #0f0;
+  }
+  60% {
+    box-shadow:
+      0 0 80px #0f0,
+      inset 0 0 80px #0f0;
+  }
+  80% {
+    box-shadow:
+      0 0 100px #0f0,
+      inset 0 0 100px #0f0;
+  }
+  100% {
+    box-shadow:
+      0 0 var(--boxShadow) #0f0,
+      inset 0 0 var(--boxShadow) #0f0;
+    filter: hue-rotate(360deg);
+  }
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

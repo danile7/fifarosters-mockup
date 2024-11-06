@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill = "var(--fill-color)">
+    <path d="M12.813,104.953L68.157,21.862H188.143l55.045,83.091L128,235.138Z"
+      stroke="var(--stroke-color)" stroke-linejoin="round" stroke-width="8"/>
+</svg>

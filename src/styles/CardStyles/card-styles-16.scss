@@ -1,0 +1,521 @@
+@mixin card-styles-16($cardHeight, $cardWidth, $card_dir) {
+	width: #{$cardWidth}px;
+	height: #{$cardHeight}px;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	font-family: "Knul", "Open Sans", sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+
+	.playercard-container {
+		height: 100%;
+		width: 100%;
+	}
+
+	div {
+		position: absolute;
+		line-height: #{$cardHeight * 0.0569620253164557}px;
+		font-size: #{$cardHeight * 0.0569620253164557}px;
+	}
+
+	.attr-divider {
+		display: none;
+	}
+
+	.playercard-attr {
+		width: 47.02970%;
+		text-align: left;
+		font-size: #{$cardHeight * 0.0632911392405063}px;
+		.fut-rating {
+			font-family: "Knul-Bold", "Open Sans", sans-serif;
+			display: inline-block;
+			width: 23.15789474%;
+		}
+	}
+
+	.playercard-attr1,
+	.playercard-attr4 {
+		top: 59.49367%;
+	}
+	.playercard-attr2,
+	.playercard-attr5 {
+		top: 67.72152%;
+	}
+	.playercard-attr3,
+	.playercard-attr6 {
+		top: 75.94937%;
+	}
+
+	.playercard-attr1,
+	.playercard-attr2,
+	.playercard-attr3 {
+		left: 13.86139%;
+	}
+	.playercard-attr4,
+	.playercard-attr5,
+	.playercard-attr6 {
+		left: 56.43564%;
+	}
+
+	.playercard-mid-bar {
+		top: 83.22785%;
+		left: 0;
+		width: calc(100% - (9.90099% * 2));
+		height: 7.91139%;
+		margin: 0 9.90099%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		& > div {
+			position: relative;
+			display: inline-block;
+			width: 31%;
+			text-align: center;
+			font-size: #{$cardHeight * 0.0506329113924051}px;
+			& > .midbar-label {
+				font-size: #{$cardHeight * 0.0221518987341772}px;
+				clear: both;
+				display: block;
+				line-height: #{$cardHeight * 0.0253164556962025}px;
+				margin: 1px 0 0;
+			}
+		}
+		.playercard-chemistry,
+		.playercard-fifarosters {
+			display: none;
+			width: 100%;
+			line-height: #{$cardHeight * 0.0949367088607595}px;
+		}
+		.playercard-chemistry {
+			font-family: "Knul-Bold", "Open Sans", sans-serif;
+			.icon {
+				width: 14.85149%;
+				//height: 9.49367%;
+			}
+		}
+		.playercard-fifarosters {
+			font-family: 'Exo 2';
+			font-weight: 600;
+			font-style: italic;
+			text-transform: none;
+			text-align: center;
+			.icon {
+				display: none;
+			}
+		}
+	}
+
+	.playercard-name {
+		font-family: "Knul-Bold", "Open Sans", sans-serif;
+		text-align: center;
+		font-size: #{$cardHeight * 0.0632911392405063}px;
+		width: 97.02970%;
+		height: 6.64557%;
+		top: 50.31646%;
+		left: 1.48515%;
+		white-space: nowrap;
+		overflow: hidden;
+		line-height: #{$cardHeight * 0.0759493670886076}px;
+	}
+
+	.playercard-rating {
+		font-family: "Knul-Bold", "Open Sans", sans-serif;
+		text-align: center;
+		font-size: #{$cardHeight * 0.0886075949367089}px;
+		line-height: #{$cardHeight * 0.139240506329114}px;
+		width: 24.75248%;
+		top: 5.06329%;
+		left: 17.82178%;
+		&#rating {
+			text-align: center;
+		}
+	}
+
+	.playercard-position {
+		font-family: "Knul-Bold", "Open Sans", sans-serif;
+		text-align: center;
+		width: 24.75248%;
+		top: 16.77215%;
+		left: 17.82178%;
+		&#position {
+			text-align: center;
+		}
+	}
+
+	.playercard-workrates {
+		top: 79.11392%;
+		width: 89.10891%;
+		left: 4.95050%;
+		font-size: #{$cardHeight * 0.0506329113924051}px;
+		text-align: center;
+	}
+
+	.playercard-nation {
+		top: 36.70886%;
+		left: 19.80198%;
+		width: 19.80198%;
+		margin-top: 4%;
+		img {
+			width: 100%;
+		}
+	}
+
+	.playercard-picture {
+		height: 36.39241%;
+		width: 56.93069%;
+		top: 14.24051%;
+		left: 41.58416%;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			width: 100%;
+			border-bottom-right-radius: 90px 4px;
+		}
+	}
+
+	.playercard-club {
+		top: 24.36709%;
+		left: 20.29703%;
+		height: 12.65823%;
+		width: 19.80198%;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.playercard-chem {
+		text-align: center;
+		width: 100%;
+		top: 79.43038%;
+		font-size: #{$cardHeight * 0.0506329113924051}px;
+	}
+
+	.playercard-chem .chem-name {
+		//font-family: 'Futhead-Sans-ExtraBold';
+	}
+
+	.playercard-chem .chem-icon {
+		width: 12.87129%;
+	}
+
+	// Colors
+	&.if.gold {
+		color: #dcb20a;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	}
+
+	&.if.silver {
+		color: #d6dee0;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	}
+
+	&.if.bronze {
+		color: #a48266;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	}
+
+	&.concept {
+		color: #efefef;
+		text-shadow: 0 1px #000;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.purple,
+	&.hero {
+		color: #26042f;
+	}
+
+	&.charity,
+	&.futtie,
+	&.pink,
+	&.futties,
+	&.futties-winner,
+	&.pink_gold,
+	&.pink-gold,
+	&.futtie-winner {
+		color: #450632;
+	}
+
+	&.blue,
+	&.toty {
+		color: #d2ebfa;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.tots.gold {
+		color: #ebd56d;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-gold-if.png") no-repeat center center;
+		}
+	}
+
+	&.tots.silver {
+		color: #dce5eb;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.tots.bronze {
+		color: #eac0a1;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-lightbrown.png") no-repeat center center;
+		}
+	}
+
+	&.if {
+		& .playercard-rating,
+		& .playercard-position {
+			color: #000;
+		}
+	}
+
+	&.tots {
+		text-shadow: 0 1px #000;
+		& .playercard-name {
+			color: #000;
+			text-shadow: none;
+		}
+	}
+
+	&.rb,
+	&.record-breaker,
+	&.bluered,
+	&.blue-red {
+		color: #ebebeb;
+		text-shadow: 0px 1px #000;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.legend {
+		color: #6b4a15;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-graybrown.png") no-repeat center center;
+		}
+	}
+
+	&.black-gold,
+	&.ballon-dor {
+		color: #eed679;
+		text-shadow: 0px 1px #000;
+		& .playercard-name {
+			color: #000;
+			text-shadow: none;
+		}
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-gold-if.png") no-repeat center center;
+		}
+	}
+
+	&.euro {
+		color: #fff;
+		text-shadow: 0 1px #000;
+		& .playercard-name {
+			color: #000;
+			text-shadow: none;
+		}
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.imotm,
+	&.red_blue {
+		color: #fff;
+		text-shadow: 0 1px #000;
+		.playercard-chemistry .icon {
+			background: url("../assets/chemistry/basic-white.png") no-repeat center center;
+		}
+	}
+
+	&.gold,
+	&.gold.rare {
+		//background-position: 0 -1265px;
+		background-image: url('../assets/cards/fifa16/large-rare-gold.png');
+	}
+
+	&.gold.nonrare {
+		//background-position: 0 -316px;
+		background-image: url('../assets/cards/fifa16/large-nonrare-gold.png');
+	}
+
+	&.bronze,
+	&.bronze.rare {
+		//background-position: 0 -948px;
+		background-image: url('../assets/cards/fifa16/large-rare-bronze.png');
+	}
+
+	&.bronze.nonrare {
+		//background-position: 0 0;
+		background-image: url('../assets/cards/fifa16/large-nonrare-bronze.png');
+	}
+
+	&.silver,
+	&.silver.rare {
+		//background-position: 0 -1581px;
+		background-image: url('../assets/cards/fifa16/large-rare-silver.png');
+	}
+
+	&.silver.nonrare {
+		//background-position: 0 -2261px;
+		background-image: url('../assets/cards/fifa16/large-nonrare-silver.png');
+	}
+
+	&.motm,
+	&.pink,
+	&.futties,
+	&.futties-winner,
+	&.futtie-winner,
+	&.charity,
+	&.pink-gold,
+	&.pink_gold,
+	&.green,
+	&.wcmotm,
+	&.imotm,
+	&.red_blue,
+	&.turquoise,
+	&.pro-player,
+	&.purple,
+	&.hero,
+	&.rb,
+	&.record-breaker,
+	&.bluered,
+	&.blue-red,
+	&.blue,
+	&.toty,
+	&.blue-green,
+	&.tots.gold,
+	&.tots.silver,
+	&.tots.bronze,
+	&.if.gold,
+	&.if.silver,
+	&.if.bronze {
+		//background-image: url('../assets/cards/fifa16/sprite-fut-16-specialty-cards-large.png');
+	}
+
+	&.legend {
+		//background-position: 0 -632px;
+		background-image: url('../assets/cards/fifa16/large-legend.png');
+	}
+
+	&.concept {
+		background-image: url('../assets/cards/fifa16/large-concept.png');
+	}
+
+	&.blue-green {
+		background-image: url('../assets/cards/fifa16/card-fut-15-large-blue-green.png');
+	}
+
+	&.rb,
+	&.record-breaker,
+	&.bluered,
+	&.blue-red {
+		//background-position: 0 -359px;
+		background-image: url('../assets/cards/fifa16/large-bluered.png');
+	}
+
+	&.green,
+	&.wcmotm {
+		//background-position: 0 -673px;
+		background-image: url('../assets/cards/fifa16/large-green.png');
+	}
+
+	&.motm,
+	&.orange {
+		//background-position: 0 -990px;
+		background-image: url('../assets/cards/fifa16/large-motm.png');
+	}
+
+	&.pink,
+	&.charity,
+	&.futties,
+	&.futtie {
+		//background-position: 0 -1306px;
+		background-image: url('../assets/cards/fifa16/large-charity.png');
+	}
+
+	&.pink-gold,
+	&.futtie-winner,
+	&.pink_gold {
+		//background-position: 0 -1622px;
+		background-image: url('../assets/cards/fifa16/large-pink-gold.png');
+	}
+
+	&.purple,
+	&.hero {
+		//background-position: 0 -1938px;
+		background-image: url('../assets/cards/fifa16/large-hero.png');
+	}
+
+	&.imotm,
+	&.red_blue {
+		//background-position: 0 -2254px;
+		background-image: url('../assets/cards/fifa16/large-redblue.png');
+	}
+
+	&.turquoise,
+	&.pro-player {
+		//background-position: 0 -2570px;
+		background-image: url('../assets/cards/fifa16/large-pro-player.png');
+	}
+
+	&.tots.bronze {
+		//background-position: 0 -2886px;
+		background-image: url('../assets/cards/fifa16/large-tots-bronze.png');
+	}
+
+	&.tots.gold {
+		//background-position: 0 -3202px;
+		background-image: url('../assets/cards/fifa16/large-tots-gold.png');
+	}
+
+	&.tots.silver {
+		//background-position: 0 -3518px;
+		background-image: url('../assets/cards/fifa16/large-tots-silver.png');
+	}
+
+	&.if.bronze {
+		//background-position: 0 -3834px;
+		background-image: url('../assets/cards/fifa16/large-if-bronze.png');
+	}
+
+	&.if.gold {
+		//background-position: 0 -4150px;
+		background-image: url('../assets/cards/fifa16/large-if-gold.png');
+	}
+
+	&.if.silver {
+		//background-position: 0 -4466px;
+		background-image: url('../assets/cards/fifa16/large-if-silver.png');
+	}
+
+	&.blue,
+	&.toty {
+		//background-position: 0 -4782px;
+		background-image: url('../assets/cards/fifa16/large-toty.png');
+	}
+
+	&.euro {
+		background-image: url('../assets/cards/fifa16/large-euro.png');
+		//background-position: -4px -1px;
+		//background-size: 210px 319px;
+	}
+
+	&.black-gold,
+	&.ballon-dor {
+		background-image: url('../assets/cards/fifa16/large-ballon-dor.png');
+		//background-position: -4px -1px;
+		//background-size: 210px 319px;
+	}
+}

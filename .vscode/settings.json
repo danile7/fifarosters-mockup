@@ -1,0 +1,63 @@
+{
+    // Exclude node_modules and build folders from file watching
+    "files.watcherExclude": {
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/dist": true,
+      "**/build": true
+    },
+    
+    // Exclude node_modules and build folders from file explorer
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/dist": true,
+      "**/build": true
+    },
+    
+    // Disable automatic TypeScript validation (type-check only during build)
+    "typescript.validate.enable": true,
+    
+    // Increase TypeScript memory limit to handle larger projects
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    
+    // Disable automatic linting on save to speed up editing
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "never"
+    },
+    
+    // Disable Intellisense for comments and strings
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+    
+    // Disable suggestion popup on trigger characters for faster typing
+    "editor.suggestOnTriggerCharacters": false,
+    
+    // Minimize autocomplete suggestions delay
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    
+    // Disable minimap for better performance in large files
+    "editor.minimap.enabled": false,
+    
+    // Disable format on save for larger files
+    "editor.formatOnSave": false,
+    
+    // Disable breadcrumb navigation for large projects
+    "breadcrumbs.enabled": false,
+    
+    // Disable file search following symlinks
+    "search.followSymlinks": false,
+    
+    // Limit the number of suggestions shown at once
+    "editor.suggest.maxVisibleSuggestions": 10,
+    
+    // Disable error and warning underlines (you can rely on Next.js build for these)
+    "editor.diagnostic.showSquigglyLines": false,
+    
+    // Disable semantic highlighting for large projects
+    "editor.semanticHighlighting.enabled": false
+  }
+  

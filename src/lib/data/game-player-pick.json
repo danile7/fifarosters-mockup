@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_1.png",
+    "label": "bronze",
+    "packtype": "bronze"
+  },
+  {
+    "id": 1,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_2.png",
+    "label": "silber",
+    "packtype": "silber"
+  },
+  {
+    "id": 2,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_3.png",
+    "label": "gold",
+    "packtype": "gold"
+  },
+  {
+    "id": 3,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_4.png",
+    "label": "fifarosters",
+    "packtype": "fifarosters"
+  },
+  {
+    "id": 4,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_7.png",
+    "label": "icon shot",
+    "packtype": "icon-shot"
+  },
+  {
+    "id": 5,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_8.png",
+    "label": "weekend",
+    "packtype": "weekend"
+  },
+  {
+    "id": 6,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_12.png",
+    "label": "ucl/europa shot",
+    "packtype": "ucl-europa-shot"
+  },
+  {
+    "id": 7,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_85.png",
+    "label": "winter",
+    "packtype": "winter"
+  },
+  {
+    "id": 8,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_97.png",
+    "label": "toty shot",
+    "packtype": "toty-shot"
+  },
+  {
+    "id": 9,
+    "img": "https://www.fifarosters.com/assets/packs/fifa24/packs_backgrounds_100.png",
+    "label": "toty icon shot",
+    "packtype": "toty-icon-shot"
+  }
+]

@@ -1,0 +1,40 @@
+@import "./line-awesome/css/line-awesome.css";
+@import "./components-font-awesome/css/font-awesome.css";
+@import "./scrollbar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    img {
+        @apply inline-block;
+    }
+}
+
+.bip-bip {
+    animation: bipbip 0.5s ease alternate infinite;
+}
+
+@keyframes bipbip {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*, *:focus, *:active{
+    outline : none !important;
+}
+
+
+.rotate-infinite{
+    animation : rotate 1s linear forward infinite;
+}
+
+@keyframes rotate{
+    from {transform  : rotate(0deg);}
+    to{transform : rotate(360deg);}
+}

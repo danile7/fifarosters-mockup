@@ -1,0 +1,120 @@
+{
+  "tools": {
+    "text": "Tools",
+    "items": [
+      { "id": 1, "href": "/tools/card-creator/card", "text": "Card Creator" },
+      { "id": 2, "href": "/tools/card-designer-gallery", "text": "Card Designer" },
+      { "id": 3, "href": "/tools/totw-vote", "text": "TOTW Vote" },
+      { "id": 4, "href": "/tools/toty-vote", "text": "TOTY Vote" },
+      { "id": 5, "href": "/tools/card-ranking", "text": "Card Rankings" },
+      { "id": 6, "href": "/tools/team-card-matchup", "text": "Team Card Matchup" },
+      { "id": 7, "href": "/tools/searchplayers", "text": "Search for a Player" },
+      { "id": 8, "href": "/tools/searchteams", "text": "Search for a Team" },
+      {
+        "id": 9,
+        "href": "/tools/out-of-position-list",
+        "text": "Out of Position Player Search"
+      }
+    ]
+  },
+  "lists": {
+    "text": "Lists",
+    "items": [
+      { "id": 10, "href": "/lists/toty", "text": "Team of the Year" },
+      { "id": 11, "href": "/lists/futmas", "text": "Futmas/Freeze" },
+      { "id": 12, "href": "/lists/power-players", "text": "Power Players" },
+      { "id": 13, "href": "/lists/rttf", "text": "Road to the Final" },
+      { "id": 14, "href": "/lists/carniball", "text": "Carniball" },
+      { "id": 15, "href": "/lists/prime-icon-moments", "text": "Prime Icon Moments" },
+      { "id": 16, "href": "/lists/fut-future-stars", "text": "FUT Future Stars" },
+      { "id": 17, "href": "/lists/legends", "text": "Legends / Icons" },
+      {
+        "id": 18,
+        "href": "/lists/festival-of-futball?v=18",
+        "text": "Festival of FUTball"
+      },
+      {
+        "id": 19,
+        "href": "/lists/ptg-selected?v=18",
+        "text": "Path to Glory Selected"
+      },
+      { "id": 20, "href": "/lists/tots", "text": "Team of the Season" },
+      { "id": 21, "href": "/lists/fut-birthday", "text": "FUT Birthday" },
+      { "id": 22, "href": "/lists/tott", "text": "Team of the Tournaments" },
+      { "id": 23, "href": "/lists/movember?v=17", "text": "Movember" },
+      { "id": 24, "href": "/lists/onestowatch", "text": "Ones to Watch" },
+      { "id": 25, "href": "/lists/futties", "text": "FUTTIES" },
+      { "id": 26, "href": "/lists/imotm?v=17", "text": "Int'l Man of the Match" },
+      { "id": 27, "href": "/lists/totw", "text": "Team of the Week" },
+      { "id": 28, "href": "/lists/special-cards", "text": "Special Cards" },
+      { "id": 29, "href": "/lists/playerslist?layout=card", "text": "Players List" },
+      { "id": 30, "href": "/lists/men-of-midas", "text": "Men of Midas" },
+      { "id": 31, "href": "/lists/fut-stats", "text": "FUT Card Distribution" },
+      { "id": 32, "href": "/lists/gullit-gang", "text": "Gullit Gang" },
+      {
+        "id": 33,
+        "href": "/lists/knights-of-nainggolan",
+        "text": "Knights of Nainggolan"
+      },
+      { "id": 34, "href": "/lists/silver-stars", "text": "Silver Stars" },
+      { "id": 35, "href": "/lists/career-mode-gems", "text": "Career Mode Gems" },
+      { "id": 36, "href": "/lists/world-cup", "text": "FIFA 18 World Cup" }
+    ]
+  },
+  "games": {
+    "text": "Games",
+    "items": [
+      { "id": 37, "href": "/games/pack/data", "text": "Open a Pack" },
+      { "id": 38, "href": "/games/player-pick", "text": "Open a Player Pick" },
+      { "id": 39, "href": "/games/fut-spins", "text": "FUT Spins" },
+      { "id": 40, "href": "/games/fut-memory", "text": "FUT Memory" }
+    ]
+  },
+  "social": {
+    "text": "Social",
+    "items": [
+      {
+        "id": 41,
+        "href": "https://",
+        "icon": "fa fa-twitter",
+        "bgColor": "bg-twitter",
+        "textColor": "text-white"
+      },
+      {
+        "id": 42,
+        "href": "https://",
+        "icon": "fa fa-facebook",
+        "bgColor": "bg-facebook",
+        "textColor": "text-white"
+      },
+      {
+        "id": 43,
+        "href": "https://",
+        "icon": "fa fa-youtube",
+        "bgColor": "bg-youtube",
+        "textColor": "text-white"
+      },
+      {
+        "id": 44,
+        "href": "https://",
+        "icon": "fa fa-instagram",
+        "bgColor": "bg-instagram",
+        "textColor": "text-white"
+      },
+      {
+        "id": 45,
+        "href": "https://",
+        "icon": "fa fa-reddit",
+        "bgColor": "bg-reddit",
+        "textColor": "text-red-500"
+      },
+      {
+        "id": 46,
+        "href": "https://",
+        "icon": "lab la-discord",
+        "bgColor": "bg-discord",
+        "textColor": "text-white"
+      }
+    ]
+  }
+}

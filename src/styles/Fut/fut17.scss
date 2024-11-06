@@ -1,0 +1,98 @@
+@import "card-functions.scss";
+@import "../../assets/fonts/fifa-chemistry/variables.scss";
+@import "fifa-fonts.less";
+@import "card-styles-17.less";
+
+.fut17 {
+  $card_dir_base: "../assets/cards/fifa17/";
+  &.playercard {
+    &.card-xl {
+      $cardWidth: 540;
+      $cardHeight: 810;
+      $card_dir: "#{$card_dir_base}hd-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-17($cardHeight, $cardWidth, $card_dir);
+    }
+    &.card-large {
+      $cardWidth: 202;
+      $cardHeight: 303;
+      $card_dir: "#{$card_dir_base}large-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-17($cardHeight, $cardWidth, $card_dir);
+    }
+    &.card-small {
+      $cardWidth: 135;
+      $cardHeight: 200;
+      $card_dir: "#{$card_dir_base}small-";
+      $shinePath: "#{$card_dir_base}hd-";
+      @include card-styles-17($cardHeight, $cardWidth, $card_dir);
+      .playercard-mid-bar > div > .midbar-label {
+        display: none;
+      }
+    }
+    &.card-mini {
+      $cardWidth: 540;
+      $cardHeight: 675;
+      $card_dir: "#{$card_dir_base}mini/hd-";
+      $shinePath: "#{$card_dir_base}mini/hd-";
+      @include card-styles-17($cardHeight, $cardWidth, $card_dir);
+      & .playercard-rating,
+      & .playercard-position,
+      & .playercard-club,
+      & .playercard-nation {
+        left: 18%;
+      }
+      .playercard-rating {
+        font-size: 86.83275px;
+        top: 10.7%;
+      }
+      .playercard-position {
+        font-size: 69.145px;
+        top: 24.6%;
+      }
+      .playercard-nation {
+        top: 55.5%;
+        width: 17%;
+        left: 20%;
+      }
+      .playercard-club {
+        top: 37%;
+        width: 22%;
+      }
+      .playercard-name {
+        top: 75%;
+        font-size: 59px;
+      }
+      .playercard-picture {
+        top: 25.5%;
+        height: 42.6%;
+      }
+      .playercard-mid-bar {
+        top: 73%;
+        & > div {
+          padding-top: 0;
+          font-size: 47px;
+          & > .midbar-label {
+            font-size: 27.5px;
+          }
+        }
+        .playercard-chemistry {
+          font-size: 69px;
+          .icon {
+            font-size: 83.162px;
+            top: -10px;
+            position: relative;
+          }
+        }
+        .playercard-fifarosters {
+          font-size: 55px;
+          padding: 0;
+          line-height: normal;
+        }
+      }
+      .playercard-attr {
+        display: none;
+      }
+    }
+  }
+}
